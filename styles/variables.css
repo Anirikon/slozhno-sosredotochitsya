@@ -1,3 +1,16 @@
+:root {
+  --neon-theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
+  --light-theme-color: #353430; /*Цвет навигации и текста для светлой темы*/
+  --subtitle-light-theme-color: #FF8DCB;
+  --logo-neon-theme-color: #DB00FF; /*Цвет логотипа для неоновой темы*/
+  --logo-light-theme-color: #FFC2E6; /*Цвет для навигации, бэкграунда заголовков карточек и частично текста для неоновой темы*/
+  --background-neon-theme-color: #000028;
+  --background-light-theme-color: #FFF1F7;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
+  ;
+}
+
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
