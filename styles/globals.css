@@ -12,6 +12,9 @@ body {
   margin: 0 auto;
   background: #000;
   font-family: "IBM Plex mono Regular", sans-serif;
+  font-size: 18px;
+  font-weight: var(--font-weight-text-regular);
+  color: var(--neon-theme-color);
 }
 
 h1,
