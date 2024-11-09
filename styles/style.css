@@ -21,27 +21,28 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 230px;
   height: 26px;
-  
 }
 
 .header__theme-menu-item {
   border: solid 2px rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .header__theme-menu-button {
+  width: 100%;
   border: solid 2px rgba(0, 0, 0, 0);
   background-color: transparent;
-  cursor: pointer;
   text-transform: lowercase;
   position: relative;
   z-index: 1;
+  padding: 1px 13px;
 }
 
-.header__theme-menu-button:hover {
+.header__theme-menu-item:hover {
   border: solid 2px;
   background-color: transparent;
 }
@@ -72,7 +73,7 @@
 
 .decorations {
   position: absolute;
-  width: 984px;
+  width: 100%; /*При медиазапросе на изменение ширины устройства докартивные элементы встанут на место*/
   height: 728px;
   margin: 20px;
   display: flex;
