@@ -1,5 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+/* Стили хедера */
+
 .decorated-zone {
   position: relative;
   width: 100%;
@@ -121,4 +124,78 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+
+/* Стили мэйна */
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000028;
+}
+
+.main__first__grid {
+  padding: 0 20px;
+  margin-bottom: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.main__first__grid__item:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+.main__first__grid__item:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+.main__first__grid__item:nth-child(3) {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.main__first_grid__item__title {
+  background-color: var(--neon-theme-color);
+  color: var(--background-neon-theme-color);
+  font-weight: var(--font-weight-text-bold);
+  margin-bottom: 10px;
+}
+
+.main__first_grid__item__description {
+  color: var(--neon-theme-text-color);
+  line-height: 23.4px;
+}
+
+.main__first_grid__item__description a {
+  text-shadow: 3px 2px var(--neon-theme-color);
+  text-decoration: none;
+}
+
+
+.main__second__grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+  
+.main__second__grid__item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.main__second__grid__item:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.main__second__grid__item:nth-child(3) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.main__second__grid__item:nth-child(4) {
+  grid-area: 2 / 3 / 3 / 4;
 }
