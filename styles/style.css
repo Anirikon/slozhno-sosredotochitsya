@@ -79,9 +79,9 @@
 
 .decorations {
   position: absolute;
-  width: 100%; /*При медиазапросе на изменение ширины устройства докартивные элементы встанут на место*/
-  height: 728px;
-  margin: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
