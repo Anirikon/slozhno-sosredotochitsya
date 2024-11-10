@@ -21,6 +21,9 @@
   margin-top: 20px;
 }
 
+
+/* Проверить отсупы между кнопками */
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
