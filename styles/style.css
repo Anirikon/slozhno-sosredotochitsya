@@ -347,7 +347,7 @@
 
 .main__four__grid__item:nth-child(6) img {
   width: 100%;
-  /* vertical-align: bottom; */
+  vertical-align: bottom;
   padding-top: 5px;
 }
 
