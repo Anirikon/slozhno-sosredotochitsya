@@ -106,7 +106,7 @@
 .logo {
   width: auto;
   height: auto;
-  font-size: 151px;
+  font-size: 157px;
   font-weight: var(--font-weight-text-bold);
   color: var(--logo-neon-theme-color);
   text-shadow: 4px 4px #FF0070;
@@ -118,6 +118,7 @@
 .header__title {
   align-self: flex-end;
   width: 491px;
+  height: 70px;
   margin-top: 114px;
   margin-right: 20px;
   background-color: #FF0070;
@@ -194,6 +195,11 @@
   color: var(--background-neon-theme-color);
   font-weight: var(--font-weight-text-bold);
   margin-bottom: 10px;
+}
+
+.main__second__grid__item__paragraph {
+  height: 47px;
+  line-height: 23.4px;
 }
 
 .main__second__grid__item:nth-child(1) {
@@ -288,6 +294,14 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 60px;
+  box-sizing: unset;
+}
+
+.main__four__grid__item__title {
+  background-color: var(--neon-theme-color);
+  color: var(--background-neon-theme-color);
+  font-weight: var(--font-weight-text-bold);
+  height: 23px;
 }
   
 .main__four__grid__item:nth-child(1) {
@@ -296,9 +310,6 @@
 
 .main__four__grid__item:nth-child(2) {
   grid-area: 2 / 1 / 3 / 3;
-}
-
-.main__four__grid__item:nth-child(2) img {
   width: 100%;
   height: 100%;
 }
@@ -307,21 +318,11 @@
   grid-area: 2 / 3 / 4 / 4;
   width: 100%;
   height: 100%;
-}
-
-.main__four__grid__item:nth-child(3) img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 .main__four__grid__item:nth-child(4) {
   grid-area: 3 / 1 / 6 / 2;
-  width: 100%;
-  height: 100%;
-}
-
-.main__four__grid__item:nth-child(4) img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -333,26 +334,14 @@
   height: 100%;
 }
 
-.main__four__grid__item:nth-child(5) img {
-  width: 100%;
-  height: 100%;
-}
-
 .main__four__grid__item:nth-child(6) {
   grid-area: 4 / 2 / 6 / 4;
-}
-
-.main__four__grid__item:nth-child(6) img {
   width: 100%;
   vertical-align: bottom;
-  padding-top: 5px;
+  height: 428px;
+  margin-top: 5px;
 }
 
-.main__four__grid__item__title {
-  background-color: var(--neon-theme-color);
-  color: var(--background-neon-theme-color);
-  font-weight: var(--font-weight-text-bold);
-}
 
 /* Стили футера */
 
