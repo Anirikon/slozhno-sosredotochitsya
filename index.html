@@ -16,34 +16,36 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button class="header__theme-menu-button header__theme-menu-button_type_light">день</button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" 
-            disabled>авто</button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark">неон</button>
-          </li>
-        </ul>
-      </nav>
-      <div class="bulb">
-        <p>rec</p>
-        <div class="circle"></div>
+      <div class="header__container">
+        <nav class="header__theme-menu">
+          <ul class="header__theme-menu-list">
+            <li class="header__theme-menu-item">
+              <button class="header__theme-menu-button header__theme-menu-button_type_light">день</button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" 
+              disabled>авто</button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_dark">неон</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="bulb">
+          <p>rec</p>
+          <div class="circle"></div>
+        </div>
+        
       </div>
-      <div class="decorations">
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-      </div>
+      
       <div class="logo">no focus</div>
       <div class="header__title">
         <p>Что делать, когда не можешь делать ничего<br>
           Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
         </div>
+        <div class="rectangle right-up"></div>
+        <div class="rectangle left-down"></div>
     </header>
     <main class="main">
       <div class="main__first__grid">
@@ -153,9 +155,9 @@
     </main>
     <footer>
       <div class="footer__container decorations">
-        <div class="rectangle"></div>
+        <div class="rectangle footer-right-up"></div>
         <div class="logo footer__logo">focus</div>
-        <div class="rectangle"></div>
+        <div class="rectangle footer-left-down"></div>
       </div>
     </footer>
     <script src="./scripts/script.js"></script>
