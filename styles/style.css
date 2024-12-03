@@ -155,6 +155,7 @@
 
 .main__first__grid__item:nth-child(1) {
   grid-area: 1 / 1 / 2 / 2; 
+  font-weight: var(--font-weight-text-bold);
 }
 
 .main__first__grid__item:nth-child(2) {
@@ -209,6 +210,7 @@
 .main__second__grid__item:nth-child(1) {
     grid-area: 1 / 1 / 1 / 1;
     max-height: 70px;
+    font-weight: var(--font-weight-text-bold);
 }
 
 .main__second__grid__item:nth-child(2) {
@@ -246,7 +248,9 @@
 }
 
 .main__third__grid__item:nth-child(1) {
-  grid-area: 1 / 1 / 6 / 2; }
+  grid-area: 1 / 1 / 6 / 2; 
+  font-weight: var(--font-weight-text-bold);
+}
   
 .main__third__grid__item:nth-child(2) {
   grid-area: 1 / 2 / 2 / 4;
@@ -380,7 +384,10 @@ footer {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-@media (max-device-width: 768px) {
+
+
+
+@media (max-width: 768px) {
 
   .decorated-zone {
     background-size: 213% 100%;
@@ -390,7 +397,6 @@ footer {
     margin-top: 192px;
     align-self: flex-end;
     margin-right: 20px;
-
   }
   
   .header__theme-menu-list {
@@ -420,7 +426,149 @@ footer {
     margin-bottom: 20px;
   }
 
-  .footer__logo {
+  .main__four__grid__item:nth-child(6) {
+    height: auto;
     margin-top: 0;
   }
+
+  .footer__logo {
+    font-size: 120px;
+    margin-top: 0;
+  }
+}
+
+
+
+
+@media (max-width: 425px) {
+
+  .decorated-zone {
+    background-size: 251% 100%;
+  }
+
+  .header__container {
+    margin-top: 75px;
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+
+  .logo {
+    margin-top: 65px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 116px;
+  }
+
+  .header__title {
+    width: auto;
+    height: auto;
+    margin-top: 55px;
+    margin-bottom: 76px;
+    margin-left: 20px;
+  }
+
+  .main {
+    padding-top: 40px;
+  }
+
+  .main__first__grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .main__first__grid__item:first-child {
+    width: 355px;
+  }
+
+  .main__second__grid__container {
+    margin-bottom: 50px;
+  }
+
+  .main__second__grid__item:first-child {
+    width: 355px;
+    margin-bottom: 0;
+  }
+
+  .main__third__grid__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+    .main__four__grid__container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      gap: 10px;
+    }
+
+    .main__four__grid__item:nth-child(6) {
+      margin-top: 0;
+    }
+
+    .footer__logo {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 116px;
+    }
+}
+
+@media (max-width: 375px) {
+
+  .decorated-zone {
+    background-size: 285% 100%;
+}
+
+  .header__container {
+    margin-right: 10px;
+  }
+
+  .bulb {
+    right: 20px;
+  }
+
+  .logo {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header__title {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .right-up {
+    left: calc(100% - 35px);
+  }
+
+  .left-down {
+    left: 10px;
+  }
+
+  .main__first__grid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main__second__grid__container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .main__third__grid__container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .main__four__grid__container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .decorations {
+    padding: 10px;
+  }
+
 }
