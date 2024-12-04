@@ -46,3 +46,16 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a:hover {
+  border-bottom: 1px solid #F1B2CE;
+}
+
+a:focus {
+  outline: 1px solid #F1B2CE;
+  outline-offset: 0;
+}
+
+button:focus {
+    outline: 1px solid #F1B2CE;
+}

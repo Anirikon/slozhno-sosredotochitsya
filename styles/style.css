@@ -40,12 +40,36 @@
 
 .header__theme-menu-button {
   width: 100%;
-  border: solid 1px transparent;
+  border: none;
   background-color: transparent;
   text-transform: lowercase;
   position: relative;
   z-index: 2;
   padding: 0;
+}
+
+.header__theme-menu-button a {
+  text-decoration: none;
+}
+
+.header__theme-menu-button a:hover {
+  border-bottom: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button a:focus {
+  outline: none;
+  border-bottom: solid 1px var(--neon-theme-color);
+}
+
+
+
+.header__theme-menu-button a:visited {
+  border: solid 1px var(--neon-theme-color);
+  background-color: transparent;
 }
 
 .header__theme-menu-item:hover {
