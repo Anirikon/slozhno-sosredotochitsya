@@ -7,6 +7,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+
 /* Общие стили для текста, заголовков, ссылок и т.д. */
 
 .subtitle {
@@ -145,7 +146,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px #FF0070;
+  box-shadow: 0 0 4px 2px var(--theme-title-color);
   background-color: var(--theme-title-color);
 }
 
@@ -276,7 +277,6 @@
 .main__first__grid__item__description a {
   text-decoration: none;
 }
-
 
 .main__second__grid__container {
   display: grid;
@@ -442,7 +442,6 @@
   position: relative;
   width: 100%;
   height: 768px;
-  background-color: #000028;
   padding: 20px;
 }
 
@@ -468,11 +467,8 @@
     height: 1024px;
   }
 
-  .decorated-zone {
-    background-size: 213% 100%;
-  }
-
   .decorated-zone::after {
+    background-size: 213% 100%;
     opacity: 0.5;
   }
 
@@ -527,7 +523,7 @@
     height: 932px;
   }
 
-  .decorated-zone {
+  .decorated-zone::after {
     background-size: 251% 100%;
   }
 
@@ -607,7 +603,7 @@
     height: 668px;
   }
 
-  .decorated-zone {
+  .decorated-zone::after {
     background-size: 285% 100%;
 }
 
