@@ -16,7 +16,7 @@
     --theme-logo-color: var(--logo-theme-color-dark);
     --theme-logo-shadow: var(--theme-color-dark);
     --theme-border-hover-color: #FF007066;
-    --background-image: var(--theme-color-dark);
+    --background-image: var(--background-image-dark);
     --display-property: flex;
   }
 }
