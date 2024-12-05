@@ -7,11 +7,17 @@
 @media (prefers-color-scheme: dark) {
 
   .page.theme_dark {
-    --theme-color: var(--theme-color-dark); /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
-    --logo-theme-color: var(--logo-theme-color-dark); /*Цвет логотипа для неоновой темы*/
-    --background-theme-color: var(--background-theme-color-dark);
+    --theme-background: var(--background-theme-color-dark);
+    --theme-title-color: var(--theme-color-dark);
+    --theme-subtitle-color: var(--background-theme-color-dark);
+    --theme-subtitle-background: var(--theme-color-dark);
     --theme-text-color: var(--theme-text-color-dark);
-    --background-image: var(--background-image-dark);
+    --theme-text-link-shadow: var(--theme-color-dark);
+    --theme-logo-color: var(--logo-theme-color-dark);
+    --theme-logo-shadow: var(--theme-color-dark);
+    --theme-border-hover-color: #FF007066;
+    --background-image: var(--theme-color-dark);
+    --display-property: flex;
   }
 }
 

@@ -14,11 +14,11 @@
   --background-theme-color-light: #FFF1F7; /*Цвет бэкграунда для темной темы*/
   --background-image-light: url(/images/cover-image-light.png);
   --subtitle-theme-color-light: #FF8DCB;
+  --theme-border-hover-color: transparent;
 
   /* Переменные, не требующие переназначения при смене цветовой схемы */
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
-  
 }
 
 /*
