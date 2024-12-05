@@ -1,9 +1,22 @@
-/*
+/* 
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+
+  .page.theme_light {
+    --theme-color: var(--theme-color-light); /*Цвет навигации и текста для светлой темы*/
+    --subtitle-theme-color: var(--subtitle-theme-color-light);  
+    --logo-theme-color: var(--logo-theme-color-light); /*Цвет для навигации, бэкграунда заголовков карточек и частично текста для неоновой темы*/
+    --theme-text-color: var(--theme-text-color-light);
+    --background-theme-color: var(--background-theme-color-light);
+    --background-image: var(--background-image-light);
+    --display-property: none;
+  }
+
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.

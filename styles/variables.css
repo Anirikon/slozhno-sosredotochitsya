@@ -1,12 +1,24 @@
 :root {
-  --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
-  --logo-theme-color: #DB00FF; /*Цвет логотипа для неоновой темы*/
-  --background-theme-color: #000028;
+
+/* Переменные для темной темы */
+  --theme-color-dark: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
+  --logo-theme-color-dark: #DB00FF; /*Цвет логотипа для темной темы*/
+  --theme-text-color-dark: #F1B2CE; /*Цвет текста в темной теме*/
+  --background-theme-color-dark: #000028; /*Цвет бэкграунда для темной темы*/
+  --background-image-dark: url(/images/cover-image-dark.png);
+
+/* Переменные для светлой темы */
+  --theme-color-light: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
+  --logo-theme-color-light: #FFC2E6; /*Цвет логотипа для светлой темы*/
+  --theme-text-color-light: #F1B2CE; /*Цвет текста в светлой теме*/
+  --background-theme-color-light: #FFF1F7; /*Цвет бэкграунда для темной темы*/
+  --background-image-light: url(/images/cover-image-light.png);
+  --subtitle-theme-color-light: #FF8DCB;
+
+  /* Переменные, не требующие переназначения при смене цветовой схемы */
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
-  --theme-text-color: #F1B2CE;
-  --background-image: url(/images/cover-image-dark.png);
-  --display-property: flex;
+  
 }
 
 /*
@@ -14,27 +26,9 @@
   и их переопределение под различные устройства
 */
 
-@media (prefers-color-scheme: light) {
-
-  .page.theme_light {
-    --theme-color: #353430; /*Цвет навигации и текста для светлой темы*/
-    --subtitle-theme-color: #FF8DCB;
-    --logo-theme-color: #FFC2E6; /*Цвет для навигации, бэкграунда заголовков карточек и частично текста для неоновой темы*/
-    --background-theme-color: #FFF1F7;
-    --background-image: url(/images/cover-image-light.png);
-    --display-property: none;
-  }
-
-}
 
 
-@media (prefers-color-scheme: dark) {
 
-  .page.theme_dark {
-    --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
-    --logo-theme-color: #DB00FF; /*Цвет логотипа для неоновой темы*/
-    --background-theme-color: #000028;
-    --theme-text-color: #F1B2CE;
-    --background-image: url(/images/cover-image-dark.png);
-  }
-}
+
+
+
