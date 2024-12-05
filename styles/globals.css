@@ -14,7 +14,7 @@ body {
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
   font-weight: var(--font-weight-text-regular);
-  color: var(--neon-theme-color);
+  color: var(--theme-color);
   line-height: 23.34px;
 }
 

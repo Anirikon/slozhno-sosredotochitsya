@@ -1,17 +1,40 @@
 :root {
-  --neon-theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
-  --light-theme-color: #353430; /*Цвет навигации и текста для светлой темы*/
-  --subtitle-light-theme-color: #FF8DCB;
-  --logo-neon-theme-color: #DB00FF; /*Цвет логотипа для неоновой темы*/
-  --logo-light-theme-color: #FFC2E6; /*Цвет для навигации, бэкграунда заголовков карточек и частично текста для неоновой темы*/
-  --background-neon-theme-color: #000028;
-  --background-light-theme-color: #FFF1F7;
+  --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
+  --logo-theme-color: #DB00FF; /*Цвет логотипа для неоновой темы*/
+  --background-theme-color: #000028;
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
-  --neon-theme-text-color: #F1B2CE;
+  --theme-text-color: #F1B2CE;
+  --background-image: url(/images/cover-image-dark.png);
+  --display-property: flex;
 }
 
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+@media (prefers-color-scheme: light) {
+
+  .page.theme_light {
+    --theme-color: #353430; /*Цвет навигации и текста для светлой темы*/
+    --subtitle-theme-color: #FF8DCB;
+    --logo-theme-color: #FFC2E6; /*Цвет для навигации, бэкграунда заголовков карточек и частично текста для неоновой темы*/
+    --background-theme-color: #FFF1F7;
+    --background-image: url(/images/cover-image-light.png);
+    --display-property: none;
+  }
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+  .page.theme_dark {
+    --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для неоновой темы*/
+    --logo-theme-color: #DB00FF; /*Цвет логотипа для неоновой темы*/
+    --background-theme-color: #000028;
+    --theme-text-color: #F1B2CE;
+    --background-image: url(/images/cover-image-dark.png);
+  }
+}
