@@ -7,17 +7,16 @@
 @media (prefers-color-scheme: light) {
 
   .page.theme_light {
-    --theme-background: var(--background-theme-color-light);
-    --theme-title-color: var(--theme-color-light);
-    --theme-subtitle-color: var(--theme-color-light);
-    --theme-subtitle-background: var(--subtitle-theme-color-light);
-    --theme-text-color: var(--theme-color-light);
-    --theme-text-link-shadow: var(--subtitle-theme-color-light);
-    --theme-logo-color: var(--logo-theme-color-light);
-    --theme-logo-shadow: var(--theme-color-dark);
+    --theme-background: var(--background-theme-color-light, #FFF1F7);
+    --theme-title-color: var(--theme-color-light, #353430);
+    --theme-subtitle-color: var(--theme-color-light, #353430);
+    --theme-subtitle-background: var(--subtitle-theme-color-light, #FF8DCB);
+    --theme-text-color: var(--theme-color-light, #353430);
+    --theme-text-link-shadow: var(--subtitle-theme-color-light, #FF8DCB);
+    --theme-logo-color: var(--logo-theme-color-light, #FFC2E6);
+    --theme-logo-shadow: var(--theme-color-dark, #FF0070);
     --theme-border-hover-color: #32312D66;
-
-    --background-image: var(--background-image-light);
+    --background-image: var(--background-image-light, url(/images/cover-image-light.png));
     --display-property: none;
   }
 }

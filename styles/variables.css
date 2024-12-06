@@ -11,7 +11,7 @@
   --theme-color-light: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
   --logo-theme-color-light: #FFC2E6; /*Цвет логотипа для светлой темы*/
   --theme-text-color-light: #F1B2CE; /*Цвет текста в светлой теме*/
-  --background-theme-color-light: #FFF1F7; /*Цвет бэкграунда для темной темы*/
+  --background-theme-color-light: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
   --background-image-light: url(/images/cover-image-light.png);
   --subtitle-theme-color-light: #FF8DCB;
   --theme-border-hover-color: transparent;
