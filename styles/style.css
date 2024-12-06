@@ -4,6 +4,11 @@
 
 .page {
   background: var(--theme-background);
+  background-image: var(--background-image);
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -37,7 +42,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  /* content: '';
   background: var(--background-image);
   background-size: 120% 100%;
   background-repeat: no-repeat;
@@ -47,7 +52,7 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
+  z-index: -1; */
 }
 
 .header {
@@ -101,18 +106,19 @@
   top: -1px;
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   outline: none;
   border: 1px solid transparent;
   border-bottom: solid 1px var(--theme-title-color);
 }
 
-.header__theme-menu-button:hover:not(:focus):not(:disabled) {
+.header__theme-menu-button:hover:not(:focus-visible):not(:disabled) {
   border: 1px solid var(--theme-border-hover-color);
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--theme-title-color);
+  pointer-events: none;
 }
 
 .bulb {
@@ -469,6 +475,7 @@
 
   .logo {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    text-shadow: 4px 4px var(--theme-text-link-shadow);
   }
 
   .header__title {
@@ -496,6 +503,8 @@
   .footer__logo {
     font-size: 120px;
     margin-top: 0;
+    text-shadow: 2px 2px var(--theme-text-link-shadow);
+    
   }
 }
 

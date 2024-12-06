@@ -1,20 +1,31 @@
 :root {
 
 /* Переменные для темной темы */
-  --theme-color-dark: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
-  --logo-theme-color-dark: #DB00FF; /*Цвет логотипа для темной темы*/
-  --theme-text-color-dark: #F1B2CE; /*Цвет текста в темной теме*/
-  --background-theme-color-dark: #000028; /*Цвет бэкграунда для темной темы*/
-  --background-image-dark: url(/images/cover-image-dark.png);
+  --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
+  --theme-logo-color: #DB00FF; /*Цвет логотипа для темной темы*/
+  --theme-text-color: #F1B2CE; /*Цвет текста в темной теме*/
+  --background-theme-color: #000028; /*Цвет бэкграунда для темной темы*/
+  --background-image: url(/images/cover-image-dark.png);
+  --subtitle-theme-color: #FF8DCB; /*цвет подзаголовков для светлой темы*/
+  --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+  --theme-background: #000028;
+  --theme-border-hover-color: #FF007066;
+  --theme-logo-shadow: #FF0070;
+  --theme-title-color: #FF0070;
+  --theme-subtitle-color: #000028;
+  --theme-subtitle-background: #FF0070;
+  --theme-text-link-shadow: #FF0070;
+  --display-property: flex;
+  
 
 /* Переменные для светлой темы */
-  --theme-color-light: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
-  --logo-theme-color-light: #FFC2E6; /*Цвет логотипа для светлой темы*/
-  --theme-text-color-light: #F1B2CE; /*Цвет текста в светлой теме*/
-  --background-theme-color-light: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
-  --background-image-light: url(/images/cover-image-light.png);
-  --subtitle-theme-color-light: #FF8DCB;
-  --theme-border-hover-color: transparent;
+  /* --theme-color: #353430; Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы
+  --logo-theme-color: #FFC2E6; Цвет логотипа для светлой темы
+  --theme-text-color: #F1B2CE; Цвет текста в светлой теме
+  --background-theme-color: #FFF1F7; Цвет бэкграунда для светлой темы
+  --background-image: url(/images/cover-image-light.png);
+  --subtitle-theme-color: #FF8DCB;
+  --theme-border-hover-color: transparent; цвет рамки у кнопки при ховере */
 
   /* Переменные, не требующие переназначения при смене цветовой схемы */
   --font-weight-text-bold: 700;

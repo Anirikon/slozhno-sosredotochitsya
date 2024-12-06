@@ -4,24 +4,64 @@
   переключая тему
 */
 
+:root.theme-light {
+  --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
+  --theme-logo-color: #353430; /*Цвет логотипа для светлой темы*/
+  --theme-text-color: #F1B2CE; /*Цвет текста в светлой теме*/
+  --background-theme-color: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
+  --background-image: url(/images/cover-image-light.png);
+  --subtitle-theme-color: #FF8DCB;
+  --theme-background: #FFF1F7;
+  --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+  --display-property: none;
+  --theme-logo-shadow: #FF0070;
+  --theme-title-color: #353430;
+  --theme-subtitle-color: #353430;
+  --theme-subtitle-background: #FF8DCB;
+  --theme-text-link-shadow: #FF8DCB;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
+}
+
 @media (prefers-color-scheme: light) {
 
-  .page.theme_light {
-    --theme-background: var(--background-theme-color-light, #FFF1F7);
-    --theme-title-color: var(--theme-color-light, #353430);
-    --theme-subtitle-color: var(--theme-color-light, #353430);
-    --theme-subtitle-background: var(--subtitle-theme-color-light, #FF8DCB);
-    --theme-text-color: var(--theme-color-light, #353430);
-    --theme-text-link-shadow: var(--subtitle-theme-color-light, #FF8DCB);
-    --theme-logo-color: var(--logo-theme-color-light, #FFC2E6);
-    --theme-logo-shadow: var(--theme-color-dark, #FF0070);
-    --theme-border-hover-color: #32312D66;
-    --background-image: var(--background-image-light, url(/images/cover-image-light.png));
+  :root {
+    --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
+    --theme-logo-color: #FFC2E6; /*Цвет логотипа для светлой темы*/
+    --theme-text-color: #353430; /*Цвет текста в светлой теме*/
+    --background-theme-color: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
+    --background-image: url(/images/cover-image-light.png);
+    --subtitle-theme-color: #FF8DCB;
+    --theme-background: #FFF1F7;
+    --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
     --display-property: none;
+    --theme-logo-shadow: #FF0070;
+    --theme-title-color: #353430;
+    --theme-subtitle-color: #353430;
+    --theme-subtitle-background: #FF8DCB;
+    --theme-text-link-shadow: #FF8DCB;
+    --font-weight-text-bold: 700;
+    --font-weight-text-regular: 400;
   }
 }
 
 .page.theme_light {
+  --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
+  --theme-logo-color: #FFC2E6; /*Цвет логотипа для светлой темы*/
+  --theme-text-color: #353430; /*Цвет текста в светлой теме*/
+  --background-theme-color: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
+  --background-image: url(/images/cover-image-light.png);
+  --subtitle-theme-color: #FF8DCB;
+  --theme-background: #FFF1F7;
+  --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+  --display-property: none;
+  --theme-logo-shadow: #FF0070;
+  --theme-title-color: #353430;
+  --theme-subtitle-color: #353430;
+  --theme-subtitle-background: #FF8DCB;
+  --theme-text-link-shadow: #FF8DCB;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
