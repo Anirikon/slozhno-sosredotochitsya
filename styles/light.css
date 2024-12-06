@@ -12,7 +12,7 @@
   --background-image: url(/images/cover-image-light.png);
   --subtitle-theme-color: #FF8DCB;
   --theme-background: #FFF1F7;
-  --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+  --theme-border-hover-color: #32312D40; /*цвет рамки у кнопки при ховере*/
   --display-property: none;
   --theme-logo-shadow: #FF0070;
   --theme-title-color: #353430;
@@ -33,7 +33,7 @@
     --background-image: url(/images/cover-image-light.png);
     --subtitle-theme-color: #FF8DCB;
     --theme-background: #FFF1F7;
-    --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+    --theme-border-hover-color: #32312D40; /*цвет рамки у кнопки при ховере*/
     --display-property: none;
     --theme-logo-shadow: #FF0070;
     --theme-title-color: #353430;
@@ -53,7 +53,7 @@
   --background-image: url(/images/cover-image-light.png);
   --subtitle-theme-color: #FF8DCB;
   --theme-background: #FFF1F7;
-  --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+  --theme-border-hover-color: #32312D40; /*цвет рамки у кнопки при ховере*/
   --display-property: none;
   --theme-logo-shadow: #FF0070;
   --theme-title-color: #353430;

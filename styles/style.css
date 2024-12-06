@@ -41,8 +41,8 @@
   overflow: hidden;
 }
 
-.decorated-zone::after {
-  /* content: '';
+/* .decorated-zone::after {
+  content: '';
   background: var(--background-image);
   background-size: 120% 100%;
   background-repeat: no-repeat;
@@ -52,8 +52,8 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1; */
-}
+  z-index: -1;
+} */
 
 .header {
   height: 768px;
