@@ -8,7 +8,6 @@
   --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
   --theme-logo-color: #DB00FF; /*Цвет логотипа для темной темы*/
   --theme-text-color: #F1B2CE; /*Цвет текста в темной теме*/
-  --background-theme-color: #000028; /*Цвет бэкграунда для темной темы*/
   --background-image: url(/images/cover-image-dark.png);
   --subtitle-theme-color: #FF8DCB; /*цвет подзаголовков для светлой темы*/
   --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
@@ -20,6 +19,7 @@
   --theme-subtitle-background: #FF0070;
   --theme-text-link-shadow: #FF0070;
   --display-property: flex;
+  --media-opacity: .5;
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
 }
@@ -46,7 +46,6 @@
   --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
   --theme-logo-color: #DB00FF; /*Цвет логотипа для темной темы*/
   --theme-text-color: #F1B2CE; /*Цвет текста в темной теме*/
-  --background-theme-color: #000028; /*Цвет бэкграунда для темной темы*/
   --background-image: url(/images/cover-image-dark.png);
   --subtitle-theme-color: #FF8DCB; /*цвет подзаголовков для светлой темы*/
   --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
@@ -58,6 +57,7 @@
   --theme-subtitle-background: #FF0070;
   --theme-text-link-shadow: #FF0070;
   --display-property: flex;
+  --media-opacity: .5;
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
   /* сохраните этот селектор в приведённом виде.

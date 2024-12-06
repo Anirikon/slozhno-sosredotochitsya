@@ -8,7 +8,6 @@
   --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
   --theme-logo-color: #353430; /*Цвет логотипа для светлой темы*/
   --theme-text-color: #F1B2CE; /*Цвет текста в светлой теме*/
-  --background-theme-color: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
   --background-image: url(/images/cover-image-light.png);
   --subtitle-theme-color: #FF8DCB;
   --theme-background: #FFF1F7;
@@ -29,7 +28,6 @@
     --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
     --theme-logo-color: #FFC2E6; /*Цвет логотипа для светлой темы*/
     --theme-text-color: #353430; /*Цвет текста в светлой теме*/
-    --background-theme-color: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
     --background-image: url(/images/cover-image-light.png);
     --subtitle-theme-color: #FF8DCB;
     --theme-background: #FFF1F7;
@@ -49,7 +47,6 @@
   --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
   --theme-logo-color: #FFC2E6; /*Цвет логотипа для светлой темы*/
   --theme-text-color: #353430; /*Цвет текста в светлой теме*/
-  --background-theme-color: #FFF1F7; /*Цвет бэкграунда для светлой темы*/
   --background-image: url(/images/cover-image-light.png);
   --subtitle-theme-color: #FF8DCB;
   --theme-background: #FFF1F7;
