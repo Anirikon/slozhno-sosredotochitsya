@@ -24,24 +24,6 @@
   --font-weight-text-regular: 400;
 }
 
-
-/* @media (prefers-color-scheme: dark) {
-
-  .page.theme_dark {
-    --theme-background: var(--background-theme-color-dark);
-    --theme-title-color: var(--theme-color-dark);
-    --theme-subtitle-color: var(--background-theme-color-dark);
-    --theme-subtitle-background: var(--theme-color-dark);
-    --theme-text-color: var(--theme-text-color-dark);
-    --theme-text-link-shadow: var(--theme-color-dark);
-    --theme-logo-color: var(--logo-theme-color-dark);
-    --theme-logo-shadow: var(--theme-color-dark);
-    --theme-border-hover-color: #FF007066;
-    --background-image: var(--background-image-dark);
-    --display-property: flex;
-  }
-} */
-
 .page.theme_dark {
   --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
   --theme-logo-color: #DB00FF; /*Цвет логотипа для темной темы*/

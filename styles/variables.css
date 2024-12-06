@@ -1,6 +1,4 @@
 :root {
-
-/* Переменные для темной темы */
   --theme-color: #FF0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
   --theme-logo-color: #DB00FF; /*Цвет логотипа для темной темы*/
   --theme-text-color: #F1B2CE; /*Цвет текста в темной теме*/
@@ -17,18 +15,6 @@
   --theme-text-link-shadow: #FF0070;
   --media-opacity: .5;
   --display-property: flex;
-  
-
-/* Переменные для светлой темы */
-  /* --theme-color: #353430; Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы
-  --logo-theme-color: #FFC2E6; Цвет логотипа для светлой темы
-  --theme-text-color: #F1B2CE; Цвет текста в светлой теме
-  --background-theme-color: #FFF1F7; Цвет бэкграунда для светлой темы
-  --background-image: url(/images/cover-image-light.png);
-  --subtitle-theme-color: #FF8DCB;
-  --theme-border-hover-color: transparent; цвет рамки у кнопки при ховере */
-
-  /* Переменные, не требующие переназначения при смене цветовой схемы */
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
 }
