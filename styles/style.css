@@ -438,7 +438,6 @@
 }
 
 
-
 /* Брейкпоинты для адаптива */
 
 @media (max-width: 768px) {
@@ -509,8 +508,6 @@
 }
 
 
-
-
 @media (max-width: 425px) {
 
   .header {
@@ -564,30 +561,32 @@
     margin-bottom: 50px;
   }
 
-    .main__four__grid__container {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 40px;
-      gap: 10px;
-    }
+  .main__third__grid__item:first-child {
+    width: auto;
+  }
 
-    .main__four__grid__item:nth-child(6) {
-      margin-top: 0;
-    }
+  .main__four__grid__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 10px;
+  }
 
-    .footer {
-      min-height: 932px;
-    }
+  .main__four__grid__item:nth-child(6) {
+    margin-top: 0;
+  }
 
-    .footer__logo {
-      margin-top: 0;
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 116px;
-    }
+  .footer {
+    min-height: 932px;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 116px;
+  }
 }
-
-
 
 
 @media (max-width: 375px) {
@@ -598,7 +597,7 @@
   }
 
   .header__menu {
-    margin-top: 55px;
+    margin-top: 65px;
   }
 
   .logo {
@@ -634,7 +633,8 @@
 
   .footer {
     padding: 10px;
-    min-height: 668px;
+    min-height: auto;
+    max-height: 668px;
   }
 
   .footer__logo {
