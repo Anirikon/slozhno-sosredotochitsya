@@ -10,7 +10,6 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1024px;
   margin: 0 auto;
-  /* background: #000; */
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
   font-weight: var(--font-weight-text-regular);
@@ -52,6 +51,10 @@ a:hover {
 }
 
 a:focus {
+  outline: none;
+}
+
+a:focus-visible {
   outline: 1px solid #F1B2CE;
   outline-offset: 0;
 }
