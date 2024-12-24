@@ -27,7 +27,11 @@
 
 /* Общие стили для текста, заголовков, ссылок и т.д. */
 
-.subtitle {
+h1, h2 {
+  font-size: 18px;
+}
+
+.title-decor {
   color: var(--theme-subtitle-color);
   background-color: var(--theme-subtitle-background);
 }
@@ -108,7 +112,7 @@
 .header__theme-menu-button:focus-visible {
   outline: none;
   border: 1px solid transparent;
-  border-bottom: solid 1px var(--theme-title-color);
+  border-block-end: solid 1px var(--theme-title-color);
 }
 
 .header__theme-menu-button:hover:not(:focus-visible):not(:disabled) {
@@ -204,8 +208,8 @@
 
 .header__title {
   width: 491px;
-  margin-left: auto;
-  margin-bottom: 115px;
+  margin-inline-start: auto;
+  margin-block-end: 115px;
   font-weight: var(--font-weight-text-bold);
 }
 
@@ -217,12 +221,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  padding-block-start: 60px;
 }
 
 .main__first__grid {
   padding: 0 20px;
-  margin-bottom: 80px;
+  margin-block-end: 80px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -246,7 +250,7 @@
 
 .main__first__grid__item__title {
   font-weight: var(--font-weight-text-bold);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .main__first__grid__item__description {
@@ -263,14 +267,14 @@
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 80px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-block-end: 80px;
 }
 
 .main__second__grid__item__title {
   font-weight: var(--font-weight-text-bold);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .main__second__grid__item__paragraph {
@@ -307,9 +311,9 @@
   grid-template-rows: repeat(6, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 80px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-block-end: 80px;
 }
 
 .main__third__grid__item__title {
@@ -347,7 +351,7 @@
 
 .main__third__grid__item__subtitle {
   font-weight: var(--font-weight-text-regular);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .main__third__grid__item__description {
@@ -365,9 +369,9 @@
   grid-template-rows: repeat(5, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 60px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-block-end: 60px;
   box-sizing: unset;
 }
 
@@ -411,7 +415,7 @@
   width: 100%;
   vertical-align: bottom;
   height: 428px;
-  margin-top: 5px;
+  margin-block-start: 5px;
 }
 
 
@@ -433,7 +437,7 @@
 
 .footer__logo {
   text-shadow: 2px 2px 0 var(--theme-logo-shadow);
-  margin-top: 0;
+  margin-block-start: 0;
   align-self: center;
 }
 
@@ -456,7 +460,7 @@
   }
 
   .header__menu {
-    margin-top: 172px;
+    margin-block-start: 172px;
     align-self: flex-end;
   }
   
@@ -473,7 +477,7 @@
   .header__title {
     width: 364px;
     height: auto;
-    margin-bottom: 163px;
+    margin-block-end: 163px;
   }
 
   .main__second__grid__container {
@@ -483,7 +487,7 @@
 
   .main__second__grid__item:first-child {
     width: 236px;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .main__third__grid__item:first-child {
@@ -492,7 +496,7 @@
 
   .main__four__grid__item:nth-child(6) {
     height: auto;
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   .footer {
@@ -501,7 +505,7 @@
 
   .footer__logo {
     font-size: 120px;
-    margin-top: 0;
+    margin-block-start: 0;
     text-shadow: 2px 2px var(--theme-text-link-shadow);
     
   }
@@ -515,31 +519,31 @@
   }
 
   .header__menu {
-    margin-top: 75px;
+    margin-block-start: 75px;
     align-self: flex-end;
   }
 
   .logo {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
     font-size: 116px;
   }
 
   .header__title {
     width: auto;
     height: auto;
-    margin-top: 55px;
-    margin-bottom: 76px;
+    margin-block-start: 55px;
+    margin-block-end: 76px;
   }
 
   .main {
-    padding-top: 40px;
+    padding-block-start: 40px;
   }
 
   .main__first__grid {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-block-end: 50px;
   }
   
   .main__first__grid__item:first-child {
@@ -547,18 +551,18 @@
   }
 
   .main__second__grid__container {
-    margin-bottom: 50px;
+    margin-block-end: 50px;
   }
 
   .main__second__grid__item:first-child {
     width: 355px;
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 
   .main__third__grid__container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-block-end: 50px;
   }
 
   .main__third__grid__item:first-child {
@@ -568,12 +572,12 @@
   .main__four__grid__container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-block-end: 40px;
     gap: 10px;
   }
 
   .main__four__grid__item:nth-child(6) {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   .footer {
@@ -581,9 +585,9 @@
   }
 
   .footer__logo {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-size: 116px;
   }
 }
@@ -597,38 +601,38 @@
   }
 
   .header__menu {
-    margin-top: 65px;
+    margin-block-start: 65px;
   }
 
   .logo {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-inline-end: 10px;
   }
 
   .header__title {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 56px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 56px;
   }
 
   .main__first__grid {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
   }
 
   .main__second__grid__container {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
   }
 
   .main__third__grid__container {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
   }
 
   .main__four__grid__container {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
   }
 
   .footer {
