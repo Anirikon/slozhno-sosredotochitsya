@@ -5,19 +5,19 @@
 */
 
 :root.theme-light {
-  --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
-  --theme-logo-color: #353430; /*Цвет логотипа для светлой темы*/
-  --theme-text-color: #F1B2CE; /*Цвет текста в светлой теме*/
+  --theme-color: #353430;
+  --theme-logo-color: #353430;
+  --theme-text-color: #f1b2ce;
   --background-image: url(/images/cover-image-light.png);
-  --subtitle-theme-color: #FF8DCB;
-  --theme-background: #FFF1F7;
-  --theme-border-hover-color: #32312D40; /*цвет рамки у кнопки при ховере*/
+  --subtitle-theme-color: #ff8dcb;
+  --theme-background: #fff1f7;
+  --theme-border-hover-color: #32312d40;
   --display-property: none;
-  --theme-logo-shadow: #FF0070;
+  --theme-logo-shadow: #ff0070;
   --theme-title-color: #353430;
   --theme-subtitle-color: #353430;
-  --theme-subtitle-background: #FF8DCB;
-  --theme-text-link-shadow: #FF8DCB;
+  --theme-subtitle-background: #ff8dcb;
+  --theme-text-link-shadow: #ff8dcb;
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
 }
@@ -25,38 +25,38 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
-    --theme-logo-color: #FFC2E6; /*Цвет логотипа для светлой темы*/
-    --theme-text-color: #353430; /*Цвет текста в светлой теме*/
+    --theme-color: #353430;
+    --theme-logo-color: #ffc2e6;
+    --theme-text-color: #353430;
     --background-image: url(/images/cover-image-light.png);
-    --subtitle-theme-color: #FF8DCB;
-    --theme-background: #FFF1F7;
-    --theme-border-hover-color: #32312D40; /*цвет рамки у кнопки при ховере*/
+    --subtitle-theme-color: #ff8dcb;
+    --theme-background: #fff1f7;
+    --theme-border-hover-color: #32312d40;
     --display-property: none;
-    --theme-logo-shadow: #FF0070;
+    --theme-logo-shadow: #ff0070;
     --theme-title-color: #353430;
     --theme-subtitle-color: #353430;
-    --theme-subtitle-background: #FF8DCB;
-    --theme-text-link-shadow: #FF8DCB;
+    --theme-subtitle-background: #ff8dcb;
+    --theme-text-link-shadow: #ff8dcb;
     --font-weight-text-bold: 700;
     --font-weight-text-regular: 400;
   }
 }
 
 .page.theme_light {
-  --theme-color: #353430; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для светлой темы*/
-  --theme-logo-color: #FFC2E6; /*Цвет логотипа для светлой темы*/
-  --theme-text-color: #353430; /*Цвет текста в светлой теме*/
+  --theme-color: #353430;
+  --theme-logo-color: #ffc2e6;
+  --theme-text-color: #353430;
   --background-image: url(/images/cover-image-light.png);
-  --subtitle-theme-color: #FF8DCB;
-  --theme-background: #FFF1F7;
-  --theme-border-hover-color: #32312D40; /*цвет рамки у кнопки при ховере*/
+  --subtitle-theme-color: #ff8dcb;
+  --theme-background: #fff1f7;
+  --theme-border-hover-color: #32312d40;
   --display-property: none;
-  --theme-logo-shadow: #FF0070;
+  --theme-logo-shadow: #ff0070;
   --theme-title-color: #353430;
   --theme-subtitle-color: #353430;
-  --theme-subtitle-background: #FF8DCB;
-  --theme-text-link-shadow: #FF8DCB;
+  --theme-subtitle-background: #ff8dcb;
+  --theme-text-link-shadow: #ff8dcb;
   --font-weight-text-bold: 700;
   --font-weight-text-regular: 400;
   /* сохраните этот селектор в приведённом виде.
@@ -64,5 +64,3 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-
-
