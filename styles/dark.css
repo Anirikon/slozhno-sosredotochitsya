@@ -4,7 +4,44 @@
   переключая тему
 */
 
+:root.theme-dark {
+  --theme-color: #ff0070;
+  --theme-logo-color: #db00ff;
+  --theme-text-color: #f1b2ce;
+  --background-image: url(/images/cover-image-dark.png);
+  --subtitle-theme-color: #ff8dcb;
+  --theme-border-hover-color: transparent;
+  --theme-background: #000028;
+  --theme-border-hover-color: #ff007040;
+  --theme-logo-shadow: #ff0070;
+  --theme-title-color: #ff0070;
+  --theme-subtitle-color: #000028;
+  --theme-subtitle-background: #ff0070;
+  --theme-text-link-shadow: #ff0070;
+  --display-property: flex;
+  --media-opacity: 0.5;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
+}
+
 .page.theme_dark {
+  --theme-color: #ff0070;
+  --theme-logo-color: #db00ff;
+  --theme-text-color: #f1b2ce;
+  --background-image: url(/images/cover-image-dark.png);
+  --subtitle-theme-color: #ff8dcb;
+  --theme-border-hover-color: transparent;
+  --theme-background: #000028;
+  --theme-border-hover-color: #ff007066;
+  --theme-logo-shadow: #ff0070;
+  --theme-title-color: #ff0070;
+  --theme-subtitle-color: #000028;
+  --theme-subtitle-background: #ff0070;
+  --theme-text-link-shadow: #ff0070;
+  --display-property: flex;
+  --media-opacity: 0.5;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя

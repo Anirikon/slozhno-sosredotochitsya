@@ -1,10 +1,64 @@
-/*
+/* 
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
 
+:root.theme-light {
+  --theme-color: #353430;
+  --theme-logo-color: #353430;
+  --theme-text-color: #f1b2ce;
+  --background-image: url(/images/cover-image-light.png);
+  --subtitle-theme-color: #ff8dcb;
+  --theme-background: #fff1f7;
+  --theme-border-hover-color: #32312d40;
+  --display-property: none;
+  --theme-logo-shadow: #ff0070;
+  --theme-title-color: #353430;
+  --theme-subtitle-color: #353430;
+  --theme-subtitle-background: #ff8dcb;
+  --theme-text-link-shadow: #ff8dcb;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --theme-color: #353430;
+    --theme-logo-color: #ffc2e6;
+    --theme-text-color: #353430;
+    --background-image: url(/images/cover-image-light.png);
+    --subtitle-theme-color: #ff8dcb;
+    --theme-background: #fff1f7;
+    --theme-border-hover-color: #32312d40;
+    --display-property: none;
+    --theme-logo-shadow: #ff0070;
+    --theme-title-color: #353430;
+    --theme-subtitle-color: #353430;
+    --theme-subtitle-background: #ff8dcb;
+    --theme-text-link-shadow: #ff8dcb;
+    --font-weight-text-bold: 700;
+    --font-weight-text-regular: 400;
+  }
+}
+
 .page.theme_light {
+  --theme-color: #353430;
+  --theme-logo-color: #ffc2e6;
+  --theme-text-color: #353430;
+  --background-image: url(/images/cover-image-light.png);
+  --subtitle-theme-color: #ff8dcb;
+  --theme-background: #fff1f7;
+  --theme-border-hover-color: #32312d40;
+  --display-property: none;
+  --theme-logo-shadow: #ff0070;
+  --theme-title-color: #353430;
+  --theme-subtitle-color: #353430;
+  --theme-subtitle-background: #ff8dcb;
+  --theme-text-link-shadow: #ff8dcb;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя

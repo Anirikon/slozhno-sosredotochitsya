@@ -1,3 +1,24 @@
+:root {
+  --theme-color: #ff0070; /*Цвет навигации, бэкграунда подзаголовков карточек и частично текста для темной темы*/
+  --theme-logo-color: #db00ff; /*Цвет логотипа для темной темы*/
+  --theme-text-color: #f1b2ce; /*Цвет текста в темной теме*/
+  --background-theme-color: #000028; /*Цвет бэкграунда для темной темы*/
+  --background-image: url(/images/cover-image-dark.png);
+  --subtitle-theme-color: #ff8dcb; /*цвет подзаголовков для светлой темы*/
+  --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
+  --theme-background: #000028;
+  --theme-border-hover-color: #ff007040;
+  --theme-logo-shadow: #ff0070;
+  --theme-title-color: #ff0070;
+  --theme-subtitle-color: #000028;
+  --theme-subtitle-background: #ff0070;
+  --theme-text-link-shadow: #ff0070;
+  --media-opacity: 0.5;
+  --display-property: flex;
+  --font-weight-text-bold: 700;
+  --font-weight-text-regular: 400;
+}
+
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
