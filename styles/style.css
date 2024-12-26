@@ -421,7 +421,6 @@
 
   .decorated-zone::after {
     background-size: 213% 100%;
-    opacity: 0.5;
   }
 
   .header__menu {
