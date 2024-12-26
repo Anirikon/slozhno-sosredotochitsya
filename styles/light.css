@@ -8,7 +8,7 @@
   --theme-color: #353430;
   --theme-logo-color: #f1b2ce;
   --theme-text-color: #353430;
-  --background-image: url(/images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
   --subtitle-theme-color: #ff8dcb;
   --theme-background: #fff1f7;
   --theme-border-hover-color: #32312d40;
@@ -28,7 +28,7 @@
     --theme-color: #353430;
     --theme-logo-color: #ffc2e6;
     --theme-text-color: #353430;
-    --background-image: url(/images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
     --subtitle-theme-color: #ff8dcb;
     --theme-background: #fff1f7;
     --theme-border-hover-color: #32312d40;

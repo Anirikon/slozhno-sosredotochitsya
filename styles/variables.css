@@ -3,7 +3,7 @@
   --theme-logo-color: #db00ff; /*Цвет логотипа для темной темы*/
   --theme-text-color: #f1b2ce; /*Цвет текста в темной теме*/
   --background-theme-color: #000028; /*Цвет бэкграунда для темной темы*/
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --subtitle-theme-color: #ff8dcb; /*цвет подзаголовков для светлой темы*/
   --theme-border-hover-color: transparent; /*цвет рамки у кнопки при ховере*/
   --theme-background: #000028;
