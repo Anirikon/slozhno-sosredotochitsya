@@ -467,7 +467,7 @@
   }
 
   .footer__logo {
-    font-size: 120px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-block-start: 0;
     text-shadow: 2px 2px var(--theme-text-link-shadow);
   }
