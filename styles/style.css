@@ -65,7 +65,8 @@
 
 .header {
   min-height: 768px;
-  padding: 20px;
+  padding-block-start: 20px;
+  block-size: 100vh;
 }
 
 .header__content {
@@ -73,9 +74,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.header__content::before {
+.decorated-zone::before {
   content: '';
   position: absolute;
   left: calc(100% - 45px);
@@ -85,10 +87,12 @@
   border-inline-end: 1px solid var(--theme-color);
 }
 
-.header__content::after {
+.decorated-zone::after {
   content: '';
-  position: relative;
   display: block;
+  position: relative;
+  top: -45px;
+  left: 20px;
   width: 25px;
   height: 25px;
   border-block-end: 1px solid var(--theme-color);
@@ -185,8 +189,9 @@
 .header__title {
   width: 491px;
   margin-inline-start: auto;
+  margin-inline-end: 20px;
   margin-block-start: 115px;
-  margin-block-end: 115px;
+  margin-block-end: 90px;
   font-weight: var(--font-weight-text-bold);
 }
 
@@ -368,12 +373,9 @@
     min-height: 1024px;
   }
 
-  .decorated-zone::after {
-    background-size: 213% 100%;
-  }
-
   .header__menu {
     margin-block-start: 172px;
+    margin-inline-end: 20px;
     align-self: flex-end;
   }
 
@@ -421,6 +423,10 @@
 
 @media (max-width: 600px) {
 
+  .logo {
+    margin-inline-start: 20px;
+  }
+
   .main__concentration__grid {
     display: flex;
     flex-direction: column;
@@ -438,7 +444,6 @@
     max-width: unset;
   }
   
-
   .main__better-concentrate__grid__container {
     display: flex;
     flex-direction: column;
@@ -465,10 +470,12 @@
     height: auto;
     margin-block-start: 55px;
     margin-block-end: 76px;
+    margin-inline-start: 20px;
   }
 
   .logo {
     margin-block-start: 65px;
+    margin-inline-end: 20px;
   }
 
   .main {
@@ -521,22 +528,35 @@
 @media (max-width: 375px) {
   
   .header {
-    padding: 10px;
+    padding-block-start: 10px;
     min-height: 668px;
   }
 
-  .header__content::before {
+  .decorated-zone::before {
     left: calc(100% - 35px);
+  }
+
+  .decorated-zone::after {
+    top: -31px;
+    left: 10px;
   }
 
   .header__menu {
     margin-block-start: 65px;
+    margin-inline-end: 10px;
   }
 
   .header__title {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    margin-block-end: 31px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-block-start: 0;
+    margin-block-end: 66px;
+  }
+
+  .logo {
+    margin-block-start: 0;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
   }
 
   .bulb {
