@@ -158,32 +158,6 @@
   background-color: var(--theme-title-color);
 }
 
-/* .rectangle {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.rectangle__content {
-  position: relative;
-}
-
-.rectangle_top {
-  right: 0;
-  top: 0;
-}
-
-.rectangle_bottom {
-  left: 0;
-  bottom: 0;
-}
-
-.rectangle__svg > path {
-  fill: var(--theme-title-color);
-} */
-
 .logo {
   width: auto;
   height: auto;
@@ -214,15 +188,18 @@
   padding-block-start: 60px;
 }
 
-.main__concentration__grid {
-  padding: 0 20px;
-  margin-block-end: 80px;
-  width: 100%;
+.section {
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+}
+
+.main__concentration__grid {
+  margin-block-end: 80px;
+  grid-template-rows: auto;
 }
 
 .main__concentration__grid__item:nth-child(1) {
@@ -252,14 +229,7 @@
 }
 
 .main__decreased-attention__grid__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  flex-wrap: wrap;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
   margin-block-end: 80px;
 }
 
@@ -284,13 +254,7 @@
 }
 
 .main__better-concentrate__grid__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, auto);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
   margin-block-end: 80px;
 }
 
@@ -342,13 +306,7 @@
 }
 
 .main__pictures__grid__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
   margin-block-end: 60px;
   box-sizing: unset;
 }
@@ -393,8 +351,8 @@
 .main__pictures__grid__item:nth-child(6) {
   grid-area: 4 / 2 / 6 / 4;
   width: 100%;
-  vertical-align: bottom;
   height: 428px;
+  vertical-align: bottom;
   margin-block-start: 5px;
 }
 
