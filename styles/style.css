@@ -18,8 +18,8 @@
   background-position: center;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  inline-size: 100%;
+  block-size: 100vh;
   position: fixed;
   z-index: -1;
   transition: background-image 1.5s ease-in;
@@ -60,18 +60,18 @@
 
 .decorated-zone {
   position: relative;
-  width: 100%;
+  inline-size: 100%;
 }
 
 .header {
-  min-height: 768px;
+  min-block-size: 768px;
   padding-block-start: 20px;
   block-size: 100vh;
 }
 
 .header__content {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,8 +81,8 @@
   content: '';
   position: absolute;
   left: calc(100% - 45px);
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-block-start: 1px solid var(--theme-color);
   border-inline-end: 1px solid var(--theme-color);
 }
@@ -93,8 +93,8 @@
   position: relative;
   top: -45px;
   left: 20px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-block-end: 1px solid var(--theme-color);
   border-inline-start: 1px solid var(--theme-color);
 }
@@ -119,7 +119,7 @@
 }
 
 .header__theme-menu-button {
-  width: 100%;
+  inline-size: 100%;
   text-transform: lowercase;
   padding: 3px 12px;
   line-height: 1;
@@ -167,16 +167,16 @@
   top: -16px;
   right: -39px;
   display: block;
-  width: 9px;
-  height: 9px;
+  inline-size: 9px;
+  block-size: 9px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--theme-title-color);
   background-color: var(--theme-title-color);
 }
 
 .logo {
-  width: auto;
-  height: auto;
+  inline-size: auto;
+  block-size: auto;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: var(--font-weight-text-bold);
   color: var(--theme-logo-color);
@@ -187,7 +187,7 @@
 }
 
 .header__title {
-  width: 491px;
+  inline-size: 491px;
   margin-inline-start: auto;
   margin-inline-end: 20px;
   margin-block-start: 115px;
@@ -198,7 +198,7 @@
 /* Стили мэйна */
 
 .main {
-  width: 100%;
+  inline-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +229,7 @@
 
 .main__decreased-attention__grid__item:nth-child(1) {
   grid-column: -1 / 1;
-  max-width: calc((100% - 40px) / 3);
+  max-inline-size: calc((100% - 40px) / 3);
 }
 
 .main__better-concentrate__grid__container {
@@ -282,36 +282,36 @@
 
 .main__pictures__grid__item:nth-child(2) {
   grid-area: 2 / 1 / 3 / 3;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .main__pictures__grid__item:nth-child(3) {
   grid-area: 2 / 3 / 4 / 4;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .main__pictures__grid__item:nth-child(4) {
   grid-area: 3 / 1 / 6 / 2;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .main__pictures__grid__item:nth-child(5) {
   grid-area: 3 / 2 / 4 / 3;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .main__pictures__grid__item:nth-child(6) {
   grid-area: 4 / 2 / 6 / 4;
-  width: 100%;
-  height: 428px;
+  inline-size: 100%;
+  block-size: 428px;
   vertical-align: bottom;
   margin-block-start: 5px;
 }
@@ -319,15 +319,15 @@
 /* Стили футера */
 
 .footer {
-  width: 100%;
-  height: 100vh;
-  min-height: 768px;
+  inline-size: 100%;
+  block-size: 100vh;
+  min-block-size: 768px;
   padding: 20px;
 }
 
 .footer__container {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,8 +337,8 @@
   content: '';
   position: absolute;
   left: calc(100% - 45px);
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-block-start: 1px solid var(--theme-color);
   border-inline-end: 1px solid var(--theme-color);
 }
@@ -348,8 +348,8 @@
   position: relative;
   top: -25px;
   display: block;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-block-end: 1px solid var(--theme-color);
   border-inline-start: 1px solid var(--theme-color);
 }
@@ -370,7 +370,7 @@
   }
 
   .header {
-    min-height: 1024px;
+    min-block-size: 1024px;
   }
 
   .header__menu {
@@ -381,7 +381,7 @@
 
   .header__theme-menu-list {
     flex-direction: column;
-    height: 100%;
+    block-size: 100%;
   }
 
   .logo {
@@ -391,8 +391,8 @@
   }
 
   .header__title {
-    width: 364px;
-    height: auto;
+    inline-size: 364px;
+    block-size: auto;
     margin-block-end: 163px;
   }
 
@@ -402,16 +402,16 @@
   }
 
   .main__better-concentrate__grid__item:first-child {
-    width: 236px;
+    inline-size: 236px;
   }
 
   .main__pictures__grid__item:nth-child(6) {
-    height: auto;
+    block-size: auto;
     margin-block-start: 0;
   }
 
   .footer {
-    min-height: 1024px;
+    min-block-size: 1024px;
   }
 
   .footer__logo {
@@ -425,6 +425,7 @@
 
   .logo {
     margin-inline-start: 20px;
+    margin-inline-end: 20px;
   }
 
   .main__concentration__grid {
@@ -433,15 +434,15 @@
   }
 
   .main__concentration__grid__item:first-child {
-    width: auto;
+    inline-size: auto;
   }
 
   .main__decreased-attention__grid__item:first-child {
-    width: auto;
+    inline-size: auto;
   }
 
   .main__decreased-attention__grid__item:nth-child(1) {
-    max-width: unset;
+    max-inline-size: unset;
   }
   
   .main__better-concentrate__grid__container {
@@ -450,14 +451,14 @@
   }
 
   .main__better-concentrate__grid__item:first-child {
-    width: auto;
+    inline-size: auto;
   }
 }
 
 @media (max-width: 425px) {
 
   .header {
-    min-height: auto;
+    min-block-size: auto;
   }
 
   .header__menu {
@@ -466,8 +467,8 @@
   }
 
   .header__title {
-    width: auto;
-    height: auto;
+    inline-size: auto;
+    block-size: auto;
     margin-block-start: 55px;
     margin-block-end: 76px;
     margin-inline-start: 20px;
@@ -491,7 +492,7 @@
   }
 
   .main__decreased-attention__grid__item:first-child {
-    width: 355px;
+    inline-size: 355px;
     margin-block-end: 0;
   }
 
@@ -500,7 +501,7 @@
   }
 
   .main__better-concentrate__grid__item:first-child {
-    width: auto;
+    inline-size: auto;
   }
 
   .main__pictures__grid__container {
@@ -515,7 +516,7 @@
   }
 
   .footer {
-    min-height: 932px;
+    min-block-size: 932px;
   }
 
   .footer__logo {
@@ -529,7 +530,7 @@
   
   .header {
     padding-block-start: 10px;
-    min-height: 668px;
+    min-block-size: 668px;
   }
 
   .decorated-zone::before {
@@ -571,7 +572,7 @@
 
   .footer {
     padding: 10px;
-    min-height: auto;
+    min-block-size: auto;
   }
 
   .footer::before {
