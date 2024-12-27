@@ -37,8 +37,8 @@
 }
 
 .section {
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
