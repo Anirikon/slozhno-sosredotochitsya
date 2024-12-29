@@ -77,7 +77,7 @@
   justify-content: space-between;
 }
 
-.decorated-zone::before {
+.rectangles::before {
   content: '';
   position: absolute;
   left: calc(100% - 45px);
@@ -87,7 +87,7 @@
   border-inline-end: 1px solid var(--theme-color);
 }
 
-.decorated-zone::after {
+.rectangles::after {
   content: '';
   display: block;
   position: relative;
@@ -206,35 +206,35 @@
 }
 
 .main__concentration__grid {
-  margin-block-end: 80px;
-  grid-template-rows: auto;
+  margin-block-end: 80px; /*в общий селекшн */
 }
 
-.main__concentration__grid__item:nth-child(1) {
-  grid-area: 1 / 1 / 2 / 2;
+.main__concentration__grid__item {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: span 2;
 }
 
-.main__concentration__grid__item:nth-child(2) {
-  grid-area: 1 / 2 / 2 / 4;
+.main__decreased-attention__grid {
+  margin-block-end: 80px; /*в общий селекшн */
 }
 
-.main__concentration__grid__item:nth-child(3) {
-  grid-area: 2 / 2 / 3 / 4;
+.main__decreased-attention__grid__title-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-.main__decreased-attention__grid__container {
-  grid-template-rows: auto;
-  margin-block-end: 80px;
+.main__decreased-attention__grid__item {
+  grid-row-start: 2;
 }
 
-.main__decreased-attention__grid__item:nth-child(1) {
-  grid-column: -1 / 1;
-  max-inline-size: calc((100% - 40px) / 3);
+.main__decreased-attention__grid__item:nth-child(4n) {
+  grid-column-end: 4;
 }
 
 .main__better-concentrate__grid__container {
   grid-template-rows: repeat(6, auto);
-  margin-block-end: 80px;
+  margin-block-end: 80px; /*в общий селекшн */
 }
 
 .main__better-concentrate__grid__item:nth-child(1) {
@@ -331,27 +331,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer::before {
-  content: '';
-  position: absolute;
-  left: calc(100% - 45px);
-  inline-size: 25px;
-  block-size: 25px;
-  border-block-start: 1px solid var(--theme-color);
-  border-inline-end: 1px solid var(--theme-color);
-}
-
-.footer::after {
-  content: '';
-  position: relative;
-  top: -25px;
-  display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  border-block-end: 1px solid var(--theme-color);
-  border-inline-start: 1px solid var(--theme-color);
 }
 
 .footer__logo {
@@ -533,11 +512,11 @@
     min-block-size: 668px;
   }
 
-  .decorated-zone::before {
+  .rectangles::before {
     left: calc(100% - 35px);
   }
 
-  .decorated-zone::after {
+  .rectangles::after {
     top: -35px;
     left: 10px;
   }
