@@ -67,7 +67,6 @@
 .header {
   min-block-size: 768px;
   padding-block-start: 20px;
-  block-size: 100vh;
 }
 
 .header__content {
@@ -90,9 +89,8 @@
 
 .rectangles::after {
   content: '';
-  display: block;
-  position: relative;
-  top: -45px;
+  position: absolute;
+  top: calc(100% - 45px);
   left: 20px;
   inline-size: 25px;
   block-size: 25px;
@@ -122,7 +120,7 @@
 .header__theme-menu-button {
   inline-size: 100%;
   text-transform: lowercase;
-  padding: 3px 12px;
+  padding: 2px 12px;
   line-height: 1;
   display: flex;
   justify-content: center;
@@ -137,12 +135,12 @@
 }
 
 .header__theme-menu-button:hover:not(:focus-visible):not(:disabled) {
-  border: 1px solid var(--theme-border-hover-color);
+  outline: 1px solid var(--theme-border-hover-color);
   cursor: pointer;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--theme-title-color);
+  outline: 1px solid var(--theme-title-color);
   pointer-events: none;
 }
 
@@ -159,6 +157,7 @@
   color: var(--theme-title-color);
   text-transform: uppercase;
   padding-block-start: 1.5px;
+  padding-inline-end: 4px;
   
 }
 
@@ -166,7 +165,7 @@
   content: "";
   position: relative;
   top: -16px;
-  right: -39px;
+  right: -42px;
   display: block;
   inline-size: 9px;
   block-size: 9px;
@@ -184,7 +183,7 @@
   text-shadow: 4px 4px var(--theme-logo-shadow);
   align-self: flex-start;
   line-height: 82.5%;
-  margin-block-start: 273px;
+  margin-block-start: 275px;
 }
 
 .header__title {
@@ -235,7 +234,6 @@
 
 .main__better-concentrate__grid__item__subtitle {
   font-weight: var(--font-weight-text-regular);
-  margin-block-end: 10px;
 }
 
 .main__pictures__grid__container {
@@ -254,7 +252,9 @@
 }
 
 .sunset-image {
-  grid-area: 2 / 1 / 3 / 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
 }
 
 .ice-cream-image {
@@ -282,10 +282,10 @@
 /* Стили футера */
 
 .footer {
+  position: relative;
   inline-size: 100%;
-  block-size: 100vh;
-  min-block-size: 768px;
-  padding: 20px;
+  padding-inline: 20px;
+  padding-block: 20px;
 }
 
 .footer__container {
@@ -294,6 +294,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-block-size: 728px;
 }
 
 .footer__logo {
@@ -306,6 +307,10 @@
 /* Брейкпоинты для адаптива */
 
 @media (max-width: 768px) {
+
+  .title {
+    min-width: 236px;
+  }
 
   .page::before {
     opacity: var(--media-opacity);
@@ -326,6 +331,10 @@
     block-size: 100%;
   }
 
+  .header__theme-menu-button {
+    padding: 3px 12px;
+  }
+
   .logo {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     text-shadow: 4px 4px var(--theme-text-link-shadow);
@@ -335,6 +344,7 @@
   .header__title {
     inline-size: 364px;
     block-size: auto;
+    margin-block-start: 162px;
     margin-block-end: 163px;
   }
 
@@ -348,11 +358,14 @@
   }
 
   .footer {
-    min-block-size: 1024px;
+    min-block-size: 984px;
+  }
+
+  .footer__container {
+    min-block-size: 984px;
   }
 
   .footer__logo {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-block-start: 0;
     text-shadow: 2px 2px var(--theme-text-link-shadow);
   }
@@ -401,12 +414,12 @@
   }
 
   .logo {
-    margin-block-start: 65px;
+    margin-block-start: 66px;
     margin-inline-end: 20px;
   }
 
   .main {
-    padding-block-start: 40px;
+    padding-block-start: 30px;
   }
 
   .section {
@@ -439,7 +452,6 @@
   
   .header {
     padding-block-start: 10px;
-    min-block-size: 668px;
   }
 
   .rectangles::before {
@@ -447,7 +459,6 @@
   }
 
   .rectangles::after {
-    top: -35px;
     left: 10px;
   }
 
@@ -459,12 +470,9 @@
   .header__title {
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-    margin-block-start: 0;
-    margin-block-end: 66px;
   }
 
-  .logo {
-    margin-block-start: 0;
+  .header-logo {
     margin-inline-start: 10px;
     margin-inline-end: 10px;
   }
@@ -474,6 +482,11 @@
     right: 35px;
   }
 
+  .record {
+    padding-block-start: 0;
+    padding-inline-end: 2px;
+  }
+
   .section {
     padding-inline-start: 10px;
     padding-inline-end: 10px;
@@ -481,10 +494,18 @@
 
   .footer {
     padding: 10px;
-    min-block-size: auto;
+    min-block-size: 648px;
+  }
+
+  .footer__container {
+    min-block-size: 648px;
   }
 
   .footer::before {
     left: calc(100% - 35px);
+  }
+
+  .footer::after {
+    top: calc(100% - 37px);
   }
 }
